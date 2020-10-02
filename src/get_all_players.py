@@ -12,8 +12,8 @@ BASE_PLAYERS_URL = 'https://www.basketball-reference.com/players/'
 
 
 def request_html_file(letter):
-    request_string = BASE_PLAYERS_URL + letter
-    return requests.get(request_string).text
+    request_url = BASE_PLAYERS_URL + letter
+    return requests.get(request_url).text
 
 
 def create_player_instance_from_table(player_entry):

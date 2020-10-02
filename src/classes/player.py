@@ -11,10 +11,16 @@ class Player:
         self.bref_id = info['bref_id']
         self.bref_letter = info['bref_letter']
         self.teams = []
-        self.teammates = []
+        self.team_id_set = set()
+        self.teammates = set()
+        self.seasons = []
 
     def add_team(self, team):
         self.teams.append(team)
+        self.team_id_set.add(team.team_id)
 
     def add_teammate(self, teammate):
-        self.teams.append(teammate)
+        self.teammates.add(teammate.bref_id)
+
+    def add_season(self, season):
+        self.seasons.append(season)
