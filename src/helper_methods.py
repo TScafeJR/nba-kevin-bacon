@@ -8,3 +8,6 @@ def flatten_list(input_list):
 
 def filter_empty_vals(input_list):
     return [x for x in input_list if x is not None]
+
+def create_split_list_vals(input_list, split_char):
+    return list(map(lambda entry: entry.split(split_char), input_list))

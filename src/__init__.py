@@ -1,4 +1,4 @@
-from helper_methods import merge_dictionaries, flatten_list, filter_empty_vals
+from helper_methods import merge_dictionaries, flatten_list, filter_empty_vals, create_split_list_vals
 from get_all_players import get_all_players
 from classes.player import Player
 from classes.season_entry import SeasonEntry
